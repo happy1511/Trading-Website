@@ -1,0 +1,223 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&family=Poppins:wght@600&family=Rubik&family=Ubuntu:wght@300;500&display=swap');
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: transparent;
+    width: calc(100% - 40px);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.menu-toggle{
+    padding: 12px 0;
+    display: none;
+}
+
+.logo-div {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    height: 100%;
+    width: fit-content;
+}
+
+.logo>img {
+    height: 100%;
+}
+
+.logo-desc {
+    height: 100%;
+    width: fit-content;
+}
+
+.logo-desc>p:hover{
+    cursor: pointer;
+}
+
+.logo-desc>p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.Menu{
+    height: 100%;
+    display: flex;
+}
+
+.Menu-ul{
+    padding: 0 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0;
+}
+
+.Menu-item{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: fit-content;
+}
+
+.Menu-link{
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    font:inherit;
+    height: 40px;
+    margin: 12px 0;
+    border: none;
+    outline: none;
+    overflow: visible;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Menu-link:hover{
+    background-color: rgba(255, 255, 255, 0.171);
+}
+
+.profile-section{
+    gap: 20px;
+    height: 100%;
+    width: fit-content;
+    display: flex;
+}
+
+.profile-logo{
+    display: flex;
+    justify-content: center;
+   ;
+    text-align: center;
+    height: fit-content;
+    padding: 17px 0;
+    border-radius: 100px;
+}
+
+.profile-logo>svg:hover{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.171);
+    cursor: pointer;
+}
+
+.button-signin{
+   padding: 15px 0;
+    height: calc(100% - 30px);
+}
+
+.outer-span1{
+    background: linear-gradient(75deg,#00bce6,#2962ff 50.31%,#d500f9) #aa00ff40;
+    background-blend-mode: overlay;
+    transform: translateX(-6px) skew(-22deg);
+    height:calc(34px - 17px);
+    padding:8.5px 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius: 6px;
+    
+}
+
+.outer-span1:hover{
+    cursor: pointer;
+}
+
+.signin-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.signin-link>span{
+    font:inherit;
+}
+
+.gg{
+    display: none;
+}
+
+.oo{
+    transform: translateX(6px) skew(22deg);
+
+}
+
+@media screen and (max-width:1024px) {
+    .menu-toggle{
+        display:inline-block;
+    }
+
+    .menu-toggle>button{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .menu-toggle>button:hover{
+        background-color: rgba(255, 255, 255, 0.096);
+    }
+
+    .gg{
+        display:inline-block;
+    }
+
+    .logo-desc{
+        display: none;
+    }
+
+    .Menu{
+        z-index:  112;;
+        display: none;
+        position:relative;
+        background-color: whitesmoke;
+        height: fit-content;
+        position: absolute;
+        top: 60px;
+        left: 20px ;
+        border-radius: 20px;
+    }
+
+    .Menu-ul{
+        flex-direction: column;
+
+    }
+
+    .Menu-item{
+        height: fit-content;
+    }
+
+    .Menu-link{
+        color:black;
+    }
+
+    .header{
+        justify-content: space-between;
+        margin:0 5px;
+        width: calc(100% - 10px);
+    }
+    .button-signin{
+        display: none;
+    }
+}
+
