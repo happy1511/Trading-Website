@@ -3,6 +3,7 @@
 }
 
 .section1 {
+    position: relative;
     background-color: black;
     background-image: url(../images/home-backgroundImag.webp);
     width: calc(100% - 160px);
@@ -18,10 +19,13 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
+    position: relative;
+    z-index: 99;
 }
 
 .homepage-div img {
     position: relative;
+    z-index: -111;
     max-width: 100%;
 }
 
@@ -46,6 +50,7 @@
 
 .inputform>button {
     position: relative;
+    z-index: -111;
     height: 50px;
     width: 350px;
     max-width: 100%;
@@ -108,14 +113,26 @@
 }
 
 .video{
-    padding-left: 250px;
-    padding-right: 250px;
-    width: calc(100% - 500px);
+    width:100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    z-index: 11;
 }
 
+.video>div{
+    width: fit-content;
+}
 
-.video>span>video{
-    width: 100%;
+.video>div>span{
+    width:fit-content;
+    z-index: -110;
+}
+
+.video>div>span>video{
+    position: relative;
+    z-index: -111;
+    width: calc(100% - 400px);
 }
 
 @media screen and (max-width:768px) {

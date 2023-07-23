@@ -9,6 +9,7 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Lunasima&family=Poppins:wght@600&family=Rubik&family=Ubuntu:wght@300;500&display=swap');
 .header {
     position: fixed;
+    z-index: 111;
     top: 0px;
     left: 0px;
     background-color: transparent;
@@ -178,6 +179,7 @@ html {
         background-color: rgba(255, 255, 255, 0.096);
     }
 
+
     .gg{
         display:inline-block;
     }
@@ -187,7 +189,6 @@ html {
     }
 
     .Menu{
-        z-index:  112;;
         display: none;
         position:relative;
         background-color: whitesmoke;
@@ -196,6 +197,8 @@ html {
         top: 60px;
         left: 20px ;
         border-radius: 20px;
+        z-index:  112;;
+
     }
 
     .Menu-ul{
